@@ -1,0 +1,31 @@
+{
+  "name": "@pennions/jet-framework",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/jet-framework.js",
+  "module": "./dist/jet-framework.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/jet-framework.es.js",
+      "require": "./dist/jet-framework.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "publish": "npm run deploy && npm publish --access public"
+  },
+  "author": "Jelmer Veen <https://github.com/pennions>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@pennions/jet": "^2.0.1"
+  }
+}
