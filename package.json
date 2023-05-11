@@ -1,5 +1,5 @@
 {
-  "name": "jet-framework",
+  "name": "@pennions/jet-framework",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -17,8 +17,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish": "npm run deploy && npm publish --access public"
   },
+  "author": "Jelmer Veen <https://github.com/pennions>",
+  "license": "MIT",
   "devDependencies": {
     "vite": "^4.3.2"
   },
