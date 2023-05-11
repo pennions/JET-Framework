@@ -1,12 +1,11 @@
 {
   "name": "@pennions/jet-framework",
-  "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/jet-framework.js",
+  "main": "./dist/jet-framework.min.js",
   "module": "./dist/jet-framework.es.js",
   "exports": {
     ".": {
@@ -18,7 +17,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "publish": "npm run deploy && npm publish --access public"
+    "publish": "npm run build && npm publish --access public"
   },
   "author": "Jelmer Veen <https://github.com/pennions>",
   "license": "MIT",
